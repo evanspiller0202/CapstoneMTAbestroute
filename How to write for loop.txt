@@ -1,0 +1,8 @@
+files = [filename1, filename2]
+
+For file in files:
+	df = read_parquet()
+	FUNCTION TO COMPRESS
+	WRITE TO PARQUET short[file]
+
+

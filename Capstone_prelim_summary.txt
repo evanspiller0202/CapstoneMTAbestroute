@@ -1,0 +1,25 @@
+The Problem area: What is your area of interest? Within it, what challenges or opportunities could your project address?
+
+I’m interested in NYC’s public bus system. Specifically, it is slow to change and bureaucratic and I am curious how a more efficient, dynamic system could benefit New Yorkers. Service is slow, unreliable, too infrequent and poorly connected. This planning document, which details a 4-year+ process for changing BK’s bus system, details many of the problems with NYC’s bus service. However, it also implicitly agrees with an all-at-once approach to fixing the system’s issues where major changes will be made in a single sweeping reform with large amounts of questionably useful public feedback. I am curious if a system that encouraged quickly implemented, piecemeal changes would lead to a better service overall.
+
+The User: Who experiences these problems? How would they benefit from the outcomes of your project?
+
+City residents. Because the bus service is bad, we all suffer from the wasted time of long commutes, the frustrations and heavy municipal cost of being overly reliant on an underground subway system that doesn’t go to many places in the city, and the personal cost of taxi and Uber rides to the many places in the city that are accessible only by bus or automobile. Everyone in the city stands to benefit from a bus system that reliably takes you where you need to go, especially in the areas that are poorly serviced by the subway system.
+
+The Big Idea: How can machine learning bring solutions to these areas? Research how other people have approached the problem previously. Refer to the "Intro to Capstone" slides on synapse for an overview of different machine learning approaches.
+
+There main question I’m interested in is: Can we use data to demonstrate that the pace of changes in NYC’s transportation patterns are faster than the pace of changes in bus route planning? I think this can be done with multiple methods, including a simple analysis of yellow cab data that says how much the bus route aligns with current yellow cab usage. I’m also interested in using more complicated graph models to guess how transportation patterns are changing and at least demonstrate that major changes are predictable.
+
+I’d also be interested in attempting to predict changes in transportation patterns with additional data like housing prices, crime, population density.
+
+The Impact: What societal or business value do you anticipate your project to add? If possible, try to quantify the scale of the problem (in dollars, in CO2, in time spent, ...)
+
+Bus ridership in NYC fell 11 percent from 2016 to 2019 by 86 million rides. A simple metric is fare price x reduced annual rides: a loss of roughly 237 million dollars per year. One can also estimate the hundreds of millions of dollars in increased taxi/rideshare costs for individuals as well as lost commercial activity from those who choose not to use the bus. 
+
+The Data: Identify several possible datasets in this subject area and describe them at a high level. Include references. If you struggle to find more than one or two datasets, this might mean a Data Science approach to the problem will be challenging. Check in with your Educator.
+
+Data sources: NYC Taxi Data, which tells you where people traveled to and from and at what time in the city since 2008; MTA Bus Hourly Ridership – unfortunately only goes back to 2022, but I’m wondering if I can find more; NYPD complaint map – which tells you where crimes were reported; NYC housing permit data, which might give a sense of which neighborhoods are growing
+
+The Alternative: In a few sentences, summarise a problem in an alternative subject area that also interests you.
+
+Harold Washington was elected mayor of Chicago in 1983 and 1987 and was the first Black mayor of the city. The political ‘legend’ – which was recounted on an episode of NPR’s This American Life and has been talked about by Barack Obama  – is that he squeaked by in an intensely racially polarized election in 1983, but with personal charm and charisma won over white voters in 1987. He died of a heart attack shortly after his reelection and the mix of his death and influence on Obama has given the story salience and been used as an example of how great politicians can overcome racial polarization. I’m curious if the legend is true. In other words: how much more or less racially polarized was his 1987 reelection from his 1983 election? Was his improvement impressive for a mayoral reelection campaign? Did it compare favorably to other big city mayoral elections, especially David Dinkins (NYC) and Wilson Goode (Philadelphia) – both Black mayors of major cities elected around the same time. Note: I’m not sure I’d be able to find precinct-level data from the 1980s so this might be impossible for this class.
