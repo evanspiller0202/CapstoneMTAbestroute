@@ -1,74 +1,31 @@
-## Paul's Awesome Capstone
+Evan Spiller's Capstone
 =========================
 
 ### Project Overview  
-TBD, but it's going to be amazing!
-... 
-...
-...
+I'm currently exploring a dataset of NYC taxi and rideshare rides that exists from 2009-2023. [Here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) is the data. Since each month of uber and lyft rides has as many as 90M rows, I aggregated the the data by hour and grouped the data into 3 sets of years (2019-2020, 2021, and 2022-3). With those groupings, I was able to look at key questions about life and transportation in New York City, including effects of the pandemic on work and nightlife commutership, rides after games at Yankee stadium, and the decline and recovery of general and airport commutership from 2019-2023. I'd like to go further and compare traffic patterns to current plans to remake Brooklyn's bus system and to evaluate whether patterns are shifting too quickly for the multi-year process to ensure maximum ridership.
+
 
 ### Walkthrough Demo
 
-...
-...
-...
+Begin by opening and running File_compressor_NYCTaxisAndRideshares -- this will aggregate the public data into managable files. So far, I've run it for rideshares from 2019-2023, but will include older rideshare and taxi data as well in the future.
 
-### Project Flowchart
-
-...
-...
-...
+Next, view the file NYC_TaxiRideshare_EDA. This is a file that contains several exploratory visualizations and experiments that tell you key facts about what you should expect to see inside the data.
 
 ### Project Organization
 
-...
-...
-...
-
 * `data` 
-    - contains link to copy of the dataset (stored in a publicly accessible Google Drive folder)
-    - saved copy of aggregated / processed data as long as those are not too large (> 10 MB)
-
-* `model`
-    - joblib dump of final model / model object
+    - contains 'compressed' aggregated data files that I work with in the majority of this project
+    - also contains various inputs and outputs for EDA
 
 * `notebooks`
-    - contains all final notebooks involved in the project
+    - contains all notebooks, including some rough work that ultimately ended up in NYC_TaxiRideshare_EDA, involved in the project. Once the project is finalized I will clean some of these up -- but most contain code and formulas that I've been copying for other work.
 
 * `reports`
-    - contains final report which summarises the project
-
-* `references`
-    - contains papers / tutorials used in the project
-
-* `src`
-    - Contains the project source code (refactored from the notebooks)
+    - Will contain final reports
 
 * `.gitignore`
-    - Part of Git, includes files and folders to be ignored by Git version control
-
-* `capstine_env.yml`
-    - Conda environment specification
-
-* `Makefile`
-    - Automation script for the project
+    - Used to prevent .parquet files from being uploaded to GitHub as they are too large
 
 * `README.md`
     - Project landing page (this page)
 
-* `LICENSE`
-    - Project license
-
-### Dataset
-
-...
-...
-...
-
-### Credits & References
-
-...
-...
-...
-
---------
