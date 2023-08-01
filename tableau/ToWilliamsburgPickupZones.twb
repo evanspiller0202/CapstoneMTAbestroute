@@ -1037,8 +1037,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Longitude (generated)]' field-type='quantitative' max='-8226305.3665302666' min='-8235890.5815505339' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Latitude (generated)]' field-type='quantitative' max='4982745.100612063' min='4965190.155863937' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Longitude (generated)]' field-type='quantitative' max='-8231404.9581629978' min='-8261625.8395653842' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Latitude (generated)]' field-type='quantitative' max='4967509.5915689999' min='4949954.646820874' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.08376sf0wfsmg0176p50w0ye285l].[sum:trips:qk]' max='30000' min='6' palette='tableau-map-temperatur' reverse='true' type='interpolated' />
