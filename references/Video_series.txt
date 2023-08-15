@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=87X57ldq1ok
+
+What I'm solving: the shortest path problem.
+
+Possible solutions: a. Minimum Spanning Tree b. Max Flow
