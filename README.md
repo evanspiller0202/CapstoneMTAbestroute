@@ -1,46 +1,60 @@
-Evan Spiller's Capstone
+Evan Spiller's Capstone Project: Lessons for the MTA on bus route planning
 =========================
 
 ### Project Overview  
-I'm currently exploring a dataset of NYC taxi and rideshare rides that exists from 2009-2023. [Here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) is the data. Since each month of uber and lyft rides has as many as 90M rows, I aggregated the the data by hour and grouped the data into 3 sets of years (2019-2020, 2021, and 2022-3). With those groupings, I was first able to look at key questions about life and transportation in New York City, including effects of the pandemic on work and nightlife commutership, rides after games at Yankee stadium, and the decline and recovery of general and airport commutership from 2019-2023. 
+This project builds an algorithm to draw the 'best bus routes' in NYC based on data on rideshare usage, which I used to guage demand from one location to another. A detailed explanation of the project's inspiration, logic, methodology and results is provided in FinalPresentation_ Lessons for the MTA_FULL.pptx.
 
-Then, I built a model to find the shortest route, weighted by traffic from adjacent district to adjacent district, from any district to any district. This is built as code in Shortest_Path_Including_Including_Adjacency_Code.ipynb and visualized as an application in SpillerMaps.twb. 
+ [Here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) is the data. Since each month of uber and lyft rides has as many as 90M rows, I aggregated the the data by hour and grouped the data into 3 sets of years (2019-2020, 2021, and 2022-3). With those groupings, I was first able to look at key questions about life and transportation in New York City, including effects of the pandemic on work and nightlife commutership, rides after games at Yankee stadium, and the decline and recovery of general and airport commutership from 2019-2023. 
 
-Finally, I built a model to give the route from location A to location B, given x number of taxi zones passed through, weighted by traffic, which would potentialy serve as a bus route that made redundant the largest number of Uber/Lyft rides -- a way to poentially plan bus routes to eliminate maximum traffic from rideshares. Code for this is here: Longest_Path_With_Adjacency.ipynb. I am working on the visualization, data collection and presentation now.
+Then, I built a model to find the shortest route, weighted by traffic from adjacent district to adjacent district, from any district to any district. This is built as code in Shortest_Path_Including_Including_Adjacency_Code.ipynb and visualized as an application in SpillerMaps_shortest_path_application.twb. 
+
+Third, I built a model to give the route from location A to location B, given x number of taxi zones passed through, weighted by traffic or amount of fare. The goal is to find a route that potentially would either: a. replace the maximum number of rideshare rides or b. replace the maximum amount spent on rideshares in a certain time period. Code for this is here: Longest_Path_With_Adjacency.ipynb. 
+
+I visualized this in Best_bus_route_FINAL.twb and analyzed the results quantitatively in Analysis_of_results.ipynb.
 
 ### Problem and  opportunity
 
-Context: A huge amount of for-pay rides are < 2 miles. Just in January: New Yorkers spent $54M on rides < 2 miles. This represents a failure of public transit to serve New Yorker’s basic transit needs, increasing traffic and costing New Yorkers money and experiences. 
+Context: The MTA has a long planning and implementation process, often delayed by politics and an intense process. It's not clear if this is a good way to plan bus routes as traffic patterns may be shifting faster than the MTA is currently planning and implementing routes.
 
-Problem: Increase bus ridership by designing routes with high demand. Furthermore, study the speed by which these patterns change in order to understand the utility of MTA’s multi-year planning process.
+Problem: Design an algorithm to plan routes that optimize for demand. Then, study the speed by which these patterns change in order to evaluate what a sensible timeline for planning new routes would look like.
 
-Opportunity: create an application that finds the a potential bus route from one location to another that would make the most number of for-pay rides unnecessary. Furthermore, predict how these routes will change over time.
+Opportunity: create an application that finds the a potential bus route from one location to another that would make the most number of for-pay rides unnecessary. Evaluate quantitatively how these routes change over time.
 
 
-### Walkthrough Demo
+### Glossary of key notebooks
 
-Begin by opening and running File_compressor_NYCTaxisAndRideshares -- this will aggregate the public data into managable files. So far, I've run it for rideshares from 2019-2023, but will include older rideshare and taxi data as well in the future.
+ Analysis_of_results.ipynb -- final analysis of results
+ EDA_Final.ipynb -- EDA on rideshare data with key insights on how this data behaves
+ File_compressor_NYCTaxisAndRideshares.ipynb -- compresses files on rideshares with designation HFFHV into summary files
+ File_compressor_NYCTaxisAndRideshares_FHV.ipynb -- compresses files on rideshares with designation FHV into summary files
+ Longest_Path_Comparison_By_Quarter.ipynb -- this file runs the best bus route algorithm for 15 bus routes
+ Shortest_Path_Including_Including_Adjacency_Code.ipynb -- this file creates a network for taxi zones in NYC and runs the shortest path algorithm, weighted by total number of trips in 2022
 
-Then, view the file NYC_TaxiRideshare_EDA. This is a file that contains several exploratory visualizations and experiments that tell you key facts about what you should expect to see inside the data.
+ ### Glossary of key tableau visualizations
 
-Next, view the code in in Shortest_Path_Including_Including_Adjacency_Code.ipynb and the visualization in SpillerMaps.twb to see a rudimentary tool for drivers to view the best path from place to place for NYC.
+Adjacency_spotcheck.twb -- spotchecks my adjacency code used in Shortest_Path_Including_Including_Adjacency_Code.ipynb
+ Best_bus_route_FINAL.twb -- visualizes best bus routes from Longest_Path_Comparison_By_Quarter.ipynb, showing how routes change over time for 15 proposed bus routes
+ Main_Pickup_zones_per_dropoff_2022.twb -- visualizes the major pickup zones for each dropoff zone
+ SpillerMaps_shortest_path_application.twb -- visualizes the shortest paths created in Shortest_Path_Including_Including_Adjacency_Code.ipynb i.e., a highly simplified version of Google Maps for NYC
 
-Next, view Longest_Path_With_Adjacency.ipynb to see the modeling for potential bus routes.  
+ ### Glossary of key presentations
+ FinalPresentation_ Lessons for the MTA_FULL.pptx -- full final explanation of project and findings
 
 ### Project Organization
 
 * `data` 
     - contains 'compressed' aggregated data files that I work with in the majority of this project
-    - also contains various inputs and outputs for EDA
+    - also contains various inputs and outputs for EDA 
+    -- contains midway steps that I input into notebooks and final results which I visualized in tableau
 
 * `notebooks`
-    - contains all notebooks, including NYC_TaxiRideshare_EDA, Shortest_Path_Including_Including_Adjacency_Code.ipynb, Longest_Path_With_Adjacency.ipynb. Once the project is finalized I will put the key notebooks in a special and the ones that involved more exploratory work in another notebook.
+    - contains all Jupyter notebooks -- important ones are outlined above
 
 * `tableau`
     - contains visualizations of pathing and mapping used in this project.
 
-* `reports`
-    - Will contain final reports
+* `Reports`
+    - contains visuals created throughout the project -- sort of a misnomer but it's referenced in a bunch of notebooks
 
 * `.gitignore`
     - Used to prevent .parquet files from being uploaded to GitHub as they are too large

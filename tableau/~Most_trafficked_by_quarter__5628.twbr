@@ -1,0 +1,1219 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='taxi_zones' inline='true' name='federated.1ikxp9u18nvt5j1dy2ex01uquzeq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='taxi_zones' name='ogrdirect.0tg5miu1t4h1z811cf2b818c1yrm'>
+            <connection class='ogrdirect' directory='C:/Users/EvanSpiller/Documents/DS BootCamp/Capstone/data/taxi_zones (2)' filename='taxi_zones.shp' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='ogrdirect.0tg5miu1t4h1z811cf2b818c1yrm' name='taxi_zones.shp' table='[taxi_zones.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='OBJECTID' ordinal='0' />
+            <column datatype='real' name='Shape_Leng' ordinal='1' />
+            <column datatype='real' name='Shape_Area' ordinal='2' />
+            <column datatype='string' name='zone' ordinal='3' />
+            <column datatype='integer' name='LocationID' ordinal='4' />
+            <column datatype='string' name='borough' ordinal='5' />
+            <column datatype='spatial' name='Geometry' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='ogrdirect.0tg5miu1t4h1z811cf2b818c1yrm' name='taxi_zones.shp' table='[taxi_zones.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='OBJECTID' ordinal='0' />
+            <column datatype='real' name='Shape_Leng' ordinal='1' />
+            <column datatype='real' name='Shape_Area' ordinal='2' />
+            <column datatype='string' name='zone' ordinal='3' />
+            <column datatype='integer' name='LocationID' ordinal='4' />
+            <column datatype='string' name='borough' ordinal='5' />
+            <column datatype='spatial' name='Geometry' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[taxi_zones.shp]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shape_Leng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shape_Leng]</local-name>
+            <parent-name>[taxi_zones.shp]</parent-name>
+            <remote-alias>Shape_Leng</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shape_Area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shape_Area]</local-name>
+            <parent-name>[taxi_zones.shp]</parent-name>
+            <remote-alias>Shape_Area</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[zone]</local-name>
+            <parent-name>[taxi_zones.shp]</parent-name>
+            <remote-alias>zone</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LocationID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LocationID]</local-name>
+            <parent-name>[taxi_zones.shp]</parent-name>
+            <remote-alias>LocationID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>borough</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[borough]</local-name>
+            <parent-name>[taxi_zones.shp]</parent-name>
+            <remote-alias>borough</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[taxi_zones.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='PathIDs' datatype='integer' name='[LocationID]' role='dimension' type='ordinal' />
+      <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column caption='Shape Area' datatype='real' name='[Shape_Area]' role='measure' type='quantitative' />
+      <column caption='Shape Leng' datatype='real' name='[Shape_Leng]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='taxi_zones.shp' datatype='table' name='[__tableau_internal_object_id__].[taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567]' role='measure' type='quantitative' />
+      <column caption='Borough' datatype='string' name='[borough]' role='dimension' type='nominal' />
+      <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='taxi_zones.shp' id='taxi_zones.shp_A139D8550C984F408EA4B6F6A9D5F567'>
+            <properties context=''>
+              <relation connection='ogrdirect.0tg5miu1t4h1z811cf2b818c1yrm' name='taxi_zones.shp' table='[taxi_zones.shp]' type='table'>
+                <columns>
+                  <column datatype='integer' name='OBJECTID' ordinal='0' />
+                  <column datatype='real' name='Shape_Leng' ordinal='1' />
+                  <column datatype='real' name='Shape_Area' ordinal='2' />
+                  <column datatype='string' name='zone' ordinal='3' />
+                  <column datatype='integer' name='LocationID' ordinal='4' />
+                  <column datatype='string' name='borough' ordinal='5' />
+                  <column datatype='spatial' name='Geometry' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='15routes_byquarter_bycost' inline='true' name='federated.0v5nlb21mqkq401du3p9w0a8r8oc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='15routes_byquarter_bycost' name='textscan.1yyal7u0uuts1r13xxikq1a8xo9q'>
+            <connection class='textscan' directory='C:/Users/EvanSpiller/Documents/DS BootCamp/Capstone/data' filename='15routes_byquarter_bycost.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1yyal7u0uuts1r13xxikq1a8xo9q' name='15routes_byquarter_bycost.csv' table='[15routes_byquarter_bycost#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Order' ordinal='0' />
+            <column datatype='real' name='PathIDs' ordinal='1' />
+            <column datatype='real' name='Weight_of_path' ordinal='2' />
+            <column datatype='string' name='Quarter' ordinal='3' />
+            <column datatype='string' name='Route' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1yyal7u0uuts1r13xxikq1a8xo9q' name='15routes_byquarter_bycost.csv' table='[15routes_byquarter_bycost#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Order' ordinal='0' />
+            <column datatype='real' name='PathIDs' ordinal='1' />
+            <column datatype='real' name='Weight_of_path' ordinal='2' />
+            <column datatype='string' name='Quarter' ordinal='3' />
+            <column datatype='string' name='Route' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[15routes_byquarter_bycost.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order]</local-name>
+            <parent-name>[15routes_byquarter_bycost.csv]</parent-name>
+            <remote-alias>Order</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bycost.csv_458336DD74E540E1BDBC1E5B483D2FE8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PathIDs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PathIDs]</local-name>
+            <parent-name>[15routes_byquarter_bycost.csv]</parent-name>
+            <remote-alias>PathIDs</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bycost.csv_458336DD74E540E1BDBC1E5B483D2FE8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight_of_path</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Weight_of_path]</local-name>
+            <parent-name>[15routes_byquarter_bycost.csv]</parent-name>
+            <remote-alias>Weight_of_path</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bycost.csv_458336DD74E540E1BDBC1E5B483D2FE8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[15routes_byquarter_bycost.csv]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bycost.csv_458336DD74E540E1BDBC1E5B483D2FE8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Route</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Route]</local-name>
+            <parent-name>[15routes_byquarter_bycost.csv]</parent-name>
+            <remote-alias>Route</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bycost.csv_458336DD74E540E1BDBC1E5B483D2FE8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Order]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='real' name='[PathIDs]' role='dimension' type='ordinal' />
+      <column caption='Weight of path' datatype='real' name='[Weight_of_path]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='15routes_byquarter_bycost.csv' datatype='table' name='[__tableau_internal_object_id__].[15routes_byquarter_bycost.csv_458336DD74E540E1BDBC1E5B483D2FE8]' role='measure' type='quantitative' />
+      <column-instance column='[Order]' derivation='None' name='[none:Order:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Order:ok]' palette='green_gold_10_0' type='palette'>
+            <map to='#146c36'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#146c36'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#23763f'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#308048'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#3b8b4d'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#469751'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#56a154'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#6cab56'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#86b557'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#a0bd59'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#bbc45c'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#d7ca60'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='15routes_byquarter_bycost.csv' id='15routes_byquarter_bycost.csv_458336DD74E540E1BDBC1E5B483D2FE8'>
+            <properties context=''>
+              <relation connection='textscan.1yyal7u0uuts1r13xxikq1a8xo9q' name='15routes_byquarter_bycost.csv' table='[15routes_byquarter_bycost#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Order' ordinal='0' />
+                  <column datatype='real' name='PathIDs' ordinal='1' />
+                  <column datatype='real' name='Weight_of_path' ordinal='2' />
+                  <column datatype='string' name='Quarter' ordinal='3' />
+                  <column datatype='string' name='Route' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='15routes_byquarter_bytrips' inline='true' name='federated.0lv8r8w1570vyv1d1i2gf12x2j1l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='15routes_byquarter_bytrips' name='textscan.0j5phun1l4h6g61fg6vzo183fxak'>
+            <connection class='textscan' directory='C:/Users/EvanSpiller/Documents/DS BootCamp/Capstone/data' filename='15routes_byquarter_bytrips.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0j5phun1l4h6g61fg6vzo183fxak' name='15routes_byquarter_bytrips.csv' table='[15routes_byquarter_bytrips#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Order' ordinal='0' />
+            <column datatype='real' name='PathIDs' ordinal='1' />
+            <column datatype='integer' name='Weight_of_path' ordinal='2' />
+            <column datatype='string' name='Quarter' ordinal='3' />
+            <column datatype='string' name='Route' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0j5phun1l4h6g61fg6vzo183fxak' name='15routes_byquarter_bytrips.csv' table='[15routes_byquarter_bytrips#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Order' ordinal='0' />
+            <column datatype='real' name='PathIDs' ordinal='1' />
+            <column datatype='integer' name='Weight_of_path' ordinal='2' />
+            <column datatype='string' name='Quarter' ordinal='3' />
+            <column datatype='string' name='Route' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[15routes_byquarter_bytrips.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Order]</local-name>
+            <parent-name>[15routes_byquarter_bytrips.csv]</parent-name>
+            <remote-alias>Order</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bytrips.csv_6AD3DC6836C045B68473D2F7F25F5648]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PathIDs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PathIDs]</local-name>
+            <parent-name>[15routes_byquarter_bytrips.csv]</parent-name>
+            <remote-alias>PathIDs</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bytrips.csv_6AD3DC6836C045B68473D2F7F25F5648]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight_of_path</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight_of_path]</local-name>
+            <parent-name>[15routes_byquarter_bytrips.csv]</parent-name>
+            <remote-alias>Weight_of_path</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bytrips.csv_6AD3DC6836C045B68473D2F7F25F5648]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[15routes_byquarter_bytrips.csv]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bytrips.csv_6AD3DC6836C045B68473D2F7F25F5648]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Route</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Route]</local-name>
+            <parent-name>[15routes_byquarter_bytrips.csv]</parent-name>
+            <remote-alias>Route</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[15routes_byquarter_bytrips.csv_6AD3DC6836C045B68473D2F7F25F5648]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Order]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='real' name='[PathIDs]' role='dimension' type='ordinal' />
+      <column caption='Quarter (copy)' datatype='string' name='[Quarter (copy)_1352487326361477120]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Quarter]' />
+      </column>
+      <column aggregation='Sum' caption='Weight of path' datatype='integer' name='[Weight_of_path]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='15routes_byquarter_bytrips.csv' datatype='table' name='[__tableau_internal_object_id__].[15routes_byquarter_bytrips.csv_6AD3DC6836C045B68473D2F7F25F5648]' role='measure' type='quantitative' />
+      <column-instance column='[Order]' derivation='None' name='[none:Order:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Order:ok]' palette='green_gold_10_0' type='palette'>
+            <map to='#146c36'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#22753e'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#2e7f46'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#39894c'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#439350'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#4e9d53'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#60a656'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#77b056'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#86b557'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#8eb858'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#a7bf5a'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#c0c55d'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#dacb61'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='15routes_byquarter_bytrips.csv' id='15routes_byquarter_bytrips.csv_6AD3DC6836C045B68473D2F7F25F5648'>
+            <properties context=''>
+              <relation connection='textscan.0j5phun1l4h6g61fg6vzo183fxak' name='15routes_byquarter_bytrips.csv' table='[15routes_byquarter_bytrips#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Order' ordinal='0' />
+                  <column datatype='real' name='PathIDs' ordinal='1' />
+                  <column datatype='integer' name='Weight_of_path' ordinal='2' />
+                  <column datatype='string' name='Quarter' ordinal='3' />
+                  <column datatype='string' name='Route' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='15_routes_by_cost'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>15 routes by fair  cost:&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='taxi_zones' name='federated.1ikxp9u18nvt5j1dy2ex01uquzeq' />
+            <datasource caption='15routes_byquarter_bycost' name='federated.0v5nlb21mqkq401du3p9w0a8r8oc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0v5nlb21mqkq401du3p9w0a8r8oc'>
+            <column aggregation='Sum' datatype='integer' name='[Order]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='real' name='[PathIDs]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Quarter]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column caption='Weight of path' datatype='real' name='[Weight_of_path]' role='measure' type='quantitative' />
+            <column-instance column='[Order]' derivation='None' name='[none:Order:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[PathIDs]' derivation='None' name='[none:PathIDs:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route]' derivation='None' name='[none:Route:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weight_of_path]' derivation='Sum' name='[sum:Weight_of_path:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ikxp9u18nvt5j1dy2ex01uquzeq'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='PathIDs' datatype='integer' name='[LocationID]' role='dimension' type='ordinal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LocationID]' derivation='None' name='[none:LocationID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:PathIDs:ok]'>
+            <groupfilter from='4.0' function='range' level='[none:PathIDs:ok]' to='257.0' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Quarter:nk]'>
+            <groupfilter function='member' level='[none:Quarter:nk]' member='&quot;2019-Q1&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Route:nk]'>
+            <groupfilter function='member' level='[none:Route:nk]' member='&quot;Williamsburg_to_Jamaica&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:PathIDs:ok]</column>
+            <column>[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Route:nk]</column>
+            <column>[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Quarter:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Longitude (generated)]' field-type='quantitative' max='-8220054.0108457133' min='-8242000.5009962879' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Latitude (generated)]' field-type='quantitative' max='4976398.8051324608' min='4965250.5267226147' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Order:ok]' />
+              <tooltip column='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[sum:Weight_of_path:qk]' />
+              <text column='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Order:ok]' />
+              <lod column='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[clct:Geometry:nk]' />
+              <lod column='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[none:LocationID:ok]' />
+              <lod column='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[none:zone:nk]' />
+              <geometry column='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[clct:Geometry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Latitude (generated)]</rows>
+        <cols>[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{587C844A-3013-44E4-81BC-0E72ECA69546}' />
+    </worksheet>
+    <worksheet name='15_routes_by_trip'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>15 routes by number of trips</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='taxi_zones' name='federated.1ikxp9u18nvt5j1dy2ex01uquzeq' />
+            <datasource caption='15routes_byquarter_bytrips' name='federated.0lv8r8w1570vyv1d1i2gf12x2j1l' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0lv8r8w1570vyv1d1i2gf12x2j1l'>
+            <column aggregation='Sum' datatype='integer' name='[Order]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='real' name='[PathIDs]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Quarter]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Weight of path' datatype='integer' name='[Weight_of_path]' role='dimension' type='ordinal' />
+            <column-instance column='[Weight_of_path]' derivation='Attribute' name='[attr:Weight_of_path:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order]' derivation='None' name='[none:Order:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[PathIDs]' derivation='None' name='[none:PathIDs:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route]' derivation='None' name='[none:Route:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ikxp9u18nvt5j1dy2ex01uquzeq'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='PathIDs' datatype='integer' name='[LocationID]' role='dimension' type='ordinal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LocationID]' derivation='None' name='[none:LocationID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:PathIDs:ok]'>
+            <groupfilter from='4.0' function='range' level='[none:PathIDs:ok]' to='257.0' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Quarter:nk]'>
+            <groupfilter function='member' level='[none:Quarter:nk]' member='&quot;2023-Q1&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Route:nk]'>
+            <groupfilter function='member' level='[none:Route:nk]' member='&quot;Williamsburg_to_Jamaica&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:PathIDs:ok]</column>
+            <column>[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Route:nk]</column>
+            <column>[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Quarter:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Longitude (generated)]' field-type='quantitative' max='-8199782.8622814287' min='-8257312.8767817579' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Latitude (generated)]' field-type='quantitative' max='4975712.7712090015' min='4947265.4145686422' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Order:ok]' />
+              <tooltip column='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[attr:Weight_of_path:qk]' />
+              <text column='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Order:ok]' />
+              <lod column='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[clct:Geometry:nk]' />
+              <lod column='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[none:LocationID:ok]' />
+              <lod column='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[none:zone:nk]' />
+              <geometry column='[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[clct:Geometry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Latitude (generated)]</rows>
+        <cols>[federated.1ikxp9u18nvt5j1dy2ex01uquzeq].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{0B2A3468-35ED-40D2-8D8A-58968FBB9A17}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='15_routes_by_cost_dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='15routes_byquarter_bycost' name='federated.0v5nlb21mqkq401du3p9w0a8r8oc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0v5nlb21mqkq401du3p9w0a8r8oc'>
+        <column datatype='string' name='[Quarter]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+        <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Route]' derivation='None' name='[none:Route:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='58250' id='3' name='15_routes_by_cost' w='82400' x='800' y='40750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='39750' id='11' type-v2='text' w='82400' x='800' y='1000'>
+                <formatted-text>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>1. BR to Manhattan beach: No changes</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>2. BR to SB: small changes -- hits sunset park in final iterations</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>3. Bed Stuy to SB: some instability, but start and end the same</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>4. Broadway Junction to Sunnyside: shifted around a lot in the pandemic before reverting</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>5. Downtown BK to Jackson Heights: shifted around a lot in the pandemic before reverting</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>6. Downtown BK to Kings Plaza: order changes but path stays the same</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>7. Downtown BK to Ridgewood: order changes but path stays the same</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>8. East NY to Midwood: never changes</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>9. Flatbush to Downtown: pandemic instability and one change -- switch to go through prospect lefferts garden instead of flatbush</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>10. Gravesend to Canarsie: no changes</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>11. Greenpoint to Prospect Lefferts Garden: pandemic instability but ultimately no change</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>12. Midwood to Sunset Park: shifts quite a bit in the final quarter but previous quarter was the same as start</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>13. Prospect Lefferts Garden to Bergen Beach: pandemic instability, but starts and ends in the same place</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>14. Williamsburg to Jamaica: seems to be shifting back and forth between two routes</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>15. Williamsburg to LES: pandemic instability but starts and ends in the same spot</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='9375' id='8' mode='slider' name='15_routes_by_cost' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Quarter:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='9' mode='dropdown' name='15_routes_by_cost' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Route:nk]' type-v2='filter' w='16000' x='83200' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28250' id='10' name='15_routes_by_cost' pane-specification-id='0' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Order:ok]' type-v2='color' w='16000' x='83200' y='16875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='14' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='39750' id='11' type-v2='text' w='82400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>1. BR to Manhattan beach: No changes</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>2. BR to SB: small changes -- hits sunset park in final iterations</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>3. Bed Stuy to SB: some instability, but start and end the same</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>4. Broadway Junction to Sunnyside: shifted around a lot in the pandemic before reverting</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>5. Downtown BK to Jackson Heights: shifted around a lot in the pandemic before reverting</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>6. Downtown BK to Kings Plaza: order changes but path stays the same</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>7. Downtown BK to Ridgewood: order changes but path stays the same</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>8. East NY to Midwood: never changes</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>9. Flatbush to Downtown: pandemic instability and one change -- switch to go through prospect lefferts garden instead of flatbush</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>10. Gravesend to Canarsie: no changes</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>11. Greenpoint to Prospect Lefferts Garden: pandemic instability but ultimately no change</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>12. Midwood to Sunset Park: shifts quite a bit in the final quarter but previous quarter was the same as start</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>13. Prospect Lefferts Garden to Bergen Beach: pandemic instability, but starts and ends in the same place</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>14. Williamsburg to Jamaica: seems to be shifting back and forth between two routes</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>15. Williamsburg to LES: pandemic instability but starts and ends in the same spot</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='8' mode='slider' name='15_routes_by_cost' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Quarter:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='9' mode='dropdown' name='15_routes_by_cost' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Route:nk]' type-v2='filter' w='16000' x='83200' y='10375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58250' id='3' is-fixed='true' name='15_routes_by_cost' w='82400' x='800' y='40750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='20750' id='10' name='15_routes_by_cost' pane-specification-id='0' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Order:ok]' type-v2='color' w='16000' x='83200' y='16875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{473E659F-F6E3-4F34-80A8-D205793D5E87}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='15_routes_by_trip_dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='15routes_byquarter_bytrips' name='federated.0lv8r8w1570vyv1d1i2gf12x2j1l' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0lv8r8w1570vyv1d1i2gf12x2j1l'>
+        <column datatype='string' name='[Quarter]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+        <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Route]' derivation='None' name='[none:Route:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='56875' id='3' name='15_routes_by_trip' w='82400' x='800' y='42125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='41125' id='11' type-v2='text' w='82400' x='800' y='1000'>
+                <formatted-text>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>1. BR to Manhattan beach: no shift between beginning and end. a couple quarters where things did shift.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>2. BR to SB: fairly unstable in the early order throughout.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>3. Bed Stuy to SB: shifts fairly drastically to go from more circulating early to more circulating in the middle around east NY.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>4. Broadway Junction to Sunnyside: some pandemic instability, but ends up where it started.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>5. Downtown BK to Jackson Heights: some instability, but ends up where it started.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>6. Downtown BK to Kings Plaza: similar to #3 -- more ciculating in Southern BK area by the end.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>7. Downtown BK to Ridgewood: starts and ends the same. Minor instability.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>8. East NY to Midwood: never changes</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>9. Flatbush to Downtown: a bit of instability but 2017 Q4 is the same as 2023 Q1.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>10. Gravesend to Canarsie: Never changes.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>11. Greenpoint to Prospect Lefferts Garden: some pandemic instability, but ends with only one different stop than where it starts.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>12. Midwood to Sunset Park: 2023 Q1 is quite different, but that might be a blip because 2022 Q4 is the same as 2017 Q3.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>13. Prospect Lefferts Garden to Bergen Beach: some instability, but ends the way it starts.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>14. Williamsburg to Jamaica: some instability but but ends the way it starts.</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>15. Williamsburg to LES: minor instability but ends the way it starts.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='9375' id='8' mode='slider' name='15_routes_by_trip' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Quarter:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='9' mode='dropdown' name='15_routes_by_trip' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Route:nk]' type-v2='filter' w='16000' x='83200' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='20750' id='10' name='15_routes_by_trip' pane-specification-id='0' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Order:ok]' type-v2='color' w='16000' x='83200' y='16875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='41125' id='11' type-v2='text' w='82400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>1. BR to Manhattan beach: no shift between beginning and end. a couple quarters where things did shift.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>2. BR to SB: fairly unstable in the early order throughout.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>3. Bed Stuy to SB: shifts fairly drastically to go from more circulating early to more circulating in the middle around east NY.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>4. Broadway Junction to Sunnyside: some pandemic instability, but ends up where it started.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>5. Downtown BK to Jackson Heights: some instability, but ends up where it started.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>6. Downtown BK to Kings Plaza: similar to #3 -- more ciculating in Southern BK area by the end.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>7. Downtown BK to Ridgewood: starts and ends the same. Minor instability.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>8. East NY to Midwood: never changes</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>9. Flatbush to Downtown: a bit of instability but 2017 Q4 is the same as 2023 Q1.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>10. Gravesend to Canarsie: Never changes.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>11. Greenpoint to Prospect Lefferts Garden: some pandemic instability, but ends with only one different stop than where it starts.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>12. Midwood to Sunset Park: 2023 Q1 is quite different, but that might be a blip because 2022 Q4 is the same as 2017 Q3.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>13. Prospect Lefferts Garden to Bergen Beach: some instability, but ends the way it starts.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>14. Williamsburg to Jamaica: some instability but but ends the way it starts.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Tableau Light' fontsize='10'>15. Williamsburg to LES: minor instability but ends the way it starts.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='8' mode='slider' name='15_routes_by_trip' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Quarter:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='9' mode='dropdown' name='15_routes_by_trip' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Route:nk]' type-v2='filter' w='16000' x='83200' y='10375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='56875' id='3' is-fixed='true' name='15_routes_by_trip' w='82400' x='800' y='42125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='33250' id='10' name='15_routes_by_trip' pane-specification-id='0' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Order:ok]' type-v2='color' w='16000' x='83200' y='16875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ABC67FAD-B7FF-4059-84EF-B173759DA055}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='15_routes_by_trip'>
+      <cards>
+        <edge name='left'>
+          <strip size='190'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Quarter:nk]' show-morefewerbutton='false' type='filter' />
+            <card mode='dropdown' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Route:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0lv8r8w1570vyv1d1i2gf12x2j1l].[none:Order:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{8EABDFF3-7B90-4B40-BBC4-C656939414BC}' />
+    </window>
+    <window class='worksheet' name='15_routes_by_cost'>
+      <cards>
+        <edge name='left'>
+          <strip size='190'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Quarter:nk]' show-morefewerbutton='false' type='filter' />
+            <card mode='dropdown' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Route:nk]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0v5nlb21mqkq401du3p9w0a8r8oc].[none:Order:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{98A9B1FC-74B0-494A-9A97-C910A968C2D6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='15_routes_by_trip_dashboard'>
+      <viewpoints>
+        <viewpoint name='15_routes_by_trip'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{EFF1B131-BA08-4A42-9CCD-899E22439F16}' />
+    </window>
+    <window class='dashboard' name='15_routes_by_cost_dashboard'>
+      <viewpoints>
+        <viewpoint name='15_routes_by_cost'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{31179379-5DF5-426A-B7CC-A35940D61EB7}' />
+    </window>
+  </windows>
+</workbook>

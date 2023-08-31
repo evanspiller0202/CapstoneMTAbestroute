@@ -1,0 +1,21 @@
+Visuals = good
+Don’t skip over TOC
+Love the research question
+Highlighting the problem: good
+Quotes: good design + paraphrase – no need to make this a political debate. Just lightly say the context and move on.
+Dataset slide: slow down and be clearer. 
+“This is a dataset that looks at rideshare usage in NYC. The idea is to optimize bus routes by gauging demand through a dataset of rideshare users, where they’re coming from, and where they’re going to. Basically: we want the bus to pick up these people instead of them calling an Uber or Lyft.”
+Processing: good
+Most rides are short: emphasize this – it’s important
+Pandemic decline/recovery: be clearer in how this will figure into final conclusions
+Tale of two cities: it’s a deviation…put it at the end :(
+Stability EDA: highlight  rows that matter (one that stays the same, one that changes, and one that changes in covid and goes back to normal). Maybe keep it to 20 rows. 
+Process: good
+Network: fine…not everyone will understand it, but it’s necessary
+Shortest path: good!
+Custom algo: good
+Running the model: good and loved the visuals
+Add conclusion summary slide
+Conclusions: drive point 1 stronger: don’t need a continuous planning process but a solid and on-time delivery every 5 years. Highlight in color most important words.
+Add a resource slide
+Add next steps slide
