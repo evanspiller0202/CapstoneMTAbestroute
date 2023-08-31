@@ -23,19 +23,19 @@ Opportunity: create an application that finds the a potential bus route from one
 
 ### Glossary of key notebooks
 
- Analysis_of_results.ipynb -- final analysis of results
- EDA_Final.ipynb -- EDA on rideshare data with key insights on how this data behaves
- File_compressor_NYCTaxisAndRideshares.ipynb -- compresses files on rideshares with designation HFFHV into summary files
- File_compressor_NYCTaxisAndRideshares_FHV.ipynb -- compresses files on rideshares with designation FHV into summary files
- Longest_Path_Comparison_By_Quarter.ipynb -- this file runs the best bus route algorithm for 15 bus routes
- Shortest_Path_Including_Including_Adjacency_Code.ipynb -- this file creates a network for taxi zones in NYC and runs the shortest path algorithm, weighted by total number of trips in 2022
+Analysis_of_results.ipynb -- final analysis of results
+EDA_Final.ipynb -- EDA on rideshare data with key insights on how this data behaves
+File_compressor_NYCTaxisAndRideshares.ipynb -- compresses files on rideshares with designation HFFHV into summary files
+File_compressor_NYCTaxisAndRideshares_FHV.ipynb -- compresses files on rideshares with designation FHV into summary files
+Longest_Path_Comparison_By_Quarter.ipynb -- this file runs the best bus route algorithm for 15 bus routes
+Shortest_Path_Including_Including_Adjacency_Code.ipynb -- this file creates a network for taxi zones in NYC and runs the shortest path algorithm, weighted by total number of trips in 2022
 
  ### Glossary of key tableau visualizations
 
 Adjacency_spotcheck.twb -- spotchecks my adjacency code used in Shortest_Path_Including_Including_Adjacency_Code.ipynb
- Best_bus_route_FINAL.twb -- visualizes best bus routes from Longest_Path_Comparison_By_Quarter.ipynb, showing how routes change over time for 15 proposed bus routes
- Main_Pickup_zones_per_dropoff_2022.twb -- visualizes the major pickup zones for each dropoff zone
- SpillerMaps_shortest_path_application.twb -- visualizes the shortest paths created in Shortest_Path_Including_Including_Adjacency_Code.ipynb i.e., a highly simplified version of Google Maps for NYC
+Best_bus_route_FINAL.twb -- visualizes best bus routes from Longest_Path_Comparison_By_Quarter.ipynb, showing how routes change over time for 15 proposed bus routes
+Main_Pickup_zones_per_dropoff_2022.twb -- visualizes the major pickup zones for each dropoff zone
+SpillerMaps_shortest_path_application.twb -- visualizes the shortest paths created in Shortest_Path_Including_Including_Adjacency_Code.ipynb i.e., a highly simplified version of Google Maps for NYC
 
  ### Glossary of key presentations
  FinalPresentation_ Lessons for the MTA_FULL.pptx -- full final explanation of project and findings
