@@ -1,6 +1,8 @@
 Evan Spiller's Capstone Project: Lessons for the MTA on bus route planning
 =========================
 
+![](r"C:\Users\EvanSpiller\Documents\DS BootCamp\Capstone\Reports\Gif_images_bed_to_sh\best_route_gif.gif")
+
 ### Project Overview  
 This project builds an algorithm to draw the 'best bus routes' in NYC based on data on rideshare usage, which I used to guage demand from one location to another. A detailed explanation of the project's inspiration, logic, methodology and results is provided in FinalPresentation_ Lessons for the MTA_FULL.pptx.
 
